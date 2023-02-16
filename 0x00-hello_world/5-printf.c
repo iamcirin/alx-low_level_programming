@@ -1,7 +1,11 @@
 #include<stdio.h>
 
 /**
- * Description: a main func that prints using printf and return 0
+ * main: Entry point return 0
+ *
+ * Description: a main func that prints using printf
+ *
+ * Return: returns 0
  */
 
 int main(void)
