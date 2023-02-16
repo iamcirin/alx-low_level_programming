@@ -5,7 +5,7 @@
  *
  * Description: a program that prints the sizeof different types. 
  *
- *Return: returns 0
+ * Return: returns 0
  */
 
 int main(void)
