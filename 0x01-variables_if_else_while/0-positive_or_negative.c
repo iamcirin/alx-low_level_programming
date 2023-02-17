@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- * main - Entry point.
+/**
+ * main - Entry point
  *
  * Description: checks if n positive, negative or equal to zero
  *
