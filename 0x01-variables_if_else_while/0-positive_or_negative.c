@@ -1,18 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
 /*
  * main - Entry point.
+ *
+ * Description: checks if n positive, negative or equal to zero
+ *
+ * Return: returns 0 (Success)
  */
 int main(void)
-{
-	/*
-	 * Description: a program that checks if n positive, negative or equal to zero.
-	 */
-	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -29,7 +26,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	/* Return : return 0
-	 */
 	return (0);
 }
