@@ -5,18 +5,19 @@
 
 /* betty style doc for function main goes there */
 /*
- * main - Entry point
- * Description: a program that checks if n positive, negative or equal to zero
- * Retur: return 0
+ * main - Entry point.
  */
 int main(void)
 {
+	/*
+	 * Description: a program that checks if n positive, negative or equal to zero.
+	 */
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n > 0) 
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
@@ -26,7 +27,9 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is negative", n);
+		printf("%d is negative\n", n);
 	}
+	/* Return : return 0
+	 */
 	return (0);
 }
