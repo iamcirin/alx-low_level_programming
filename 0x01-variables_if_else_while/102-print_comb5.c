@@ -14,31 +14,31 @@ int main(void)
 	/* your code goes there */
 	int first2digits = 0;
 	int second2digits;
-	
+
 	while (first2digits <= 99)
 	{
 		second2digits = first2digits;
 		while (second2digits <= 99)
 		{
-			if (second2digit != first2digit)
+			if (second2digits != first2digits)
 			{
 
 				putchar((first2digits / 10) + 48);
 				putchar((first2digits % 10) + 48);
 				putchar(' ');
-				putchar((second2digit / 10) + 48);
-				putchar((second2digit % 10) + 48);
+				putchar((second2digits / 10) + 48);
+				putchar((second2digits % 10) + 48);
 
-				if (first2digit != 98)
+				if (first2digits != 98)
 				{
 				putchar(',');
 				putchar(' ');
 				}
 			}
-			second2digit++;
+			second2digits++;
 
 		}
-		first2digit++;
+		first2digits++;
 	}
 
 	putchar('\n');
