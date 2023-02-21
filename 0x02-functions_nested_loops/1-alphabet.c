@@ -1,11 +1,8 @@
 #include"main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - prints alphabet form a - z
  *
- * Description: prints alphabet uses putchar func
- *
- * Return: return 0 (Success)
  */
 
 void print_alphabet(void)
