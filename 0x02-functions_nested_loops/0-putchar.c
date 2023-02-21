@@ -15,9 +15,9 @@ int main(void)
 
 	while (i < 8)
 	{
-		putchar(word[i]);
+		_putchar(word[i]);
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
