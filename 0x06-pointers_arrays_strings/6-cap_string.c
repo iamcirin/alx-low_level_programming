@@ -3,7 +3,7 @@
 /**
  * cap_string - Entry point
  * @s: pointer
- * Return : returns s
+ * Return: returns s
  */
 char *cap_string(char *s)
 {
