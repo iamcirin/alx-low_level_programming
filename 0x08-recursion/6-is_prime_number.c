@@ -3,7 +3,6 @@
 /**
  * is_prime_number - Entry point
  * @n: param
- * @divisor: param
  * Return: returns int
  */
 
