@@ -8,11 +8,13 @@
  */
 
 
-int is_prime_number(int n, int divisor)
+int is_prime_number(int n)
 {
+	int divisor = 5;
+
 	if (n % divisor == 0 || divisor == 1)
 		return (0);
-	if (divisir * divisor > n)
+	if (divisor * divisor > n)
 		return (1);
-	return (is_prime_number(n, divisor + 1));
+	return (is_prime_number(n));
 }
