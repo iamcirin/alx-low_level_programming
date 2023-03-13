@@ -14,10 +14,10 @@ char *str_concat(char *s1, char *s2)
 	int r = 0;
 	char *p;
 
-	if (*s1 == '\0' || *s2 == '\0')
+	if (s1 == NULL)
 	{
-		*s1 = ' ';
-		*s2 = ' ';
+		s1 = "";
+		s2 = "";
 	}
 	while (s1[i] != '\0')
 	{
@@ -41,7 +41,6 @@ char *str_concat(char *s1, char *s2)
 		p[m] = s2[r];
 		r++;
 	}
-	p[m] = '$';
-	p[m + 1] = '\0';
+	p[m] = '\0';
 	return (p);
 }
