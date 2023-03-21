@@ -1,5 +1,5 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 
 /**
@@ -62,7 +62,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	dog = (dog_t *) malloc(sizeof(dog_t));
 	if (dog == NULL)
-		return (NUL);
+		return (NULL);
 	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if ((*dog).name == NULL)
 	{
