@@ -76,6 +76,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 
 	while (format && format[i])
+	{
 		j = 0;
 
 		while (j < 4 && (format[i] != *(funcs[j].symbol)))
@@ -87,8 +88,7 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 		}
 		i++;
-
+	}
 	printf("\n");
-	va _end(ap);
+	va_end(ap);
 }
-~
