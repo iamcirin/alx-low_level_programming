@@ -25,7 +25,7 @@ void print_float(va_list arg)
 
 	printf("%f", n);
 }
-~
+
 /**
  * print_int - print int
  * @arg: a list of arguments
@@ -45,7 +45,7 @@ void print_int(va_list arg)
 
 void print_string(va_list arg)
 {
-	char *s = va_arg(arg, char *);
+	char *str = va_arg(arg, char *);
 
 	if (str == NULL)
 	{
@@ -87,10 +87,8 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 		}
 		i++;
-	}
+	
 	printf("\n");
 	va _end(ap);
 }
-
-~
 ~
