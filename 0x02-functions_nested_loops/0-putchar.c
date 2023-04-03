@@ -16,6 +16,6 @@ while(*p){
 putchar(*p);
 p++;
 }  
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
