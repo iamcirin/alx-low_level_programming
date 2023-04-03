@@ -12,8 +12,9 @@ int main(void)
 {
 char word[] = "_putchar";
 char *p = word;
-while(*p){
-putchar(*p);
+while (*p)
+{
+	putchar(*p);
 p++;
 }  
 	putchar('\n');
