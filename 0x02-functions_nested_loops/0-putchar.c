@@ -11,13 +11,11 @@
 int main(void)
 {
 	char word[] = "_putchar";
-	int i = 0;
-
-	while (i < 8)
-	{
-		_putchar(word[i]);
-		i++;
-	}
+	char *p = word;
+  	while(*p){
+    putchar(*p);
+    p++;
+  }  
 	_putchar('\n');
 	return (0);
 }
