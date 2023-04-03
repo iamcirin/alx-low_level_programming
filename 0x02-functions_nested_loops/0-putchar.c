@@ -16,7 +16,7 @@ while (*p)
 {
 	putchar(*p);
 p++;
-}  
+} 
 	putchar('\n');
 	return (0);
 }
