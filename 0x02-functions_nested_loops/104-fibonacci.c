@@ -5,7 +5,7 @@
 
 void fibonacci(void)
 {
-	long int fibo[100];
+	long int fibo[120];
 	int i;
 	int j;
 
