@@ -19,7 +19,7 @@ void fibonacci(void)
 
 	for (j = 0; j < 98; j++)
 	{
-		if (j < 49)
+		if (j < 97)
 		{
 		printf("%ld, ", fibo[j]);
 		}
