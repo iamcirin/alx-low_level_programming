@@ -31,3 +31,12 @@ void fibonacci(void)
 	}
 printf("\n");
 }
+/**
+ * main - Entry point
+ * Return: returns 0
+ */
+int main(void)
+{
+	fibonacci();
+	return (0);
+}
