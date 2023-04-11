@@ -26,6 +26,24 @@ unsigned int _strlength(const char *str)
 }
 
 /**
+ * _power - raise a given number to a specified number
+ * @first: param
+ * @second: param
+ * Return: returns the result
+ */
+unsigned int _power(unsigned int first, unsigned int second)
+{
+	unsigned int result = 1;
+
+	while (second != 0)
+	{
+		result *= first;
+		--second;
+	}
+	return (result);
+}
+
+/**
  * binary_to_uint - converts a binary to a decimal
  * @b: binary param
  * Return: returns 0 or decimal
@@ -34,20 +52,21 @@ unsigned int _strlength(const char *str)
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
-	unsigned int decimal = 0, base = 1, bit = 0;
+	unsigned int decimal = 0;
 
 	if (b == NULL)
 		return (0);
 
 	for (i = _strlength(b) - 1; i >= 0; i--)
 	{
-		bit = _atoi(b[i]);
 
-		if (bit != 0 && bit != 1)
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
+		if (b[i] == '1')
+		{
+		decimal += _power(2, _strlength(b) - 1 - i);
+		}
 
-		decimal += bit * base;
-		base *= 2;
 	}
 	return (decimal);
 }
