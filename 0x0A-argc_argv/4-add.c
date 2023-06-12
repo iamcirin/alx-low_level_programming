@@ -18,10 +18,13 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(argv[i][0]) || !isdigit(argv[i][1]))
+		if (strlen(argv[i]) > 1)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i][0]) || !isdigit(argv[i][1]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 	}
 	for (i = 1; i < argc; i++)
