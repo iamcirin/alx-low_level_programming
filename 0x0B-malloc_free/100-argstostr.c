@@ -13,19 +13,19 @@ char *argstostr(int c, char **av)
 	int i, j;
 	char *p;
 
-	if (ac == 0 || av == NULL)
+	if (c == 0 || av == NULL)
 		return (NULL);
 
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < c; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 			len++;
-		len++
+		len++;
 	}
 	p = malloc(len + 1);
 	if (p == NULL)
 		return (NULL);
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < c; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
