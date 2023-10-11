@@ -25,6 +25,7 @@ char *_strcpy(char *dest, char *src)
 int _strlen(char *str)
 {
 	int len = 0;
+
 	while (*str++)
 		len++;
 	return (len);
@@ -35,7 +36,8 @@ int _strlen(char *str)
  * @name: dog's name
  * @age: dog's age
  * @owner: dog's owner
- */ 
+ * Return: returns a pointer to a struct
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -50,7 +52,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	doggy->name = malloc(_strlen(name) + 1);
 
-	if(doggy->name == NULL)
+	if (doggy->name == NULL)
 	{
 		free(doggy);
 		return (NULL);
@@ -66,7 +68,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	doggy->name = _strcpy(doggy->name, name);
-	doggy->owner= _strcpy(doggy->owner,owner);
+	doggy->owner = _strcpy(doggy->owner, owner);
 	doggy->age = age;
 	return (doggy);
 }
