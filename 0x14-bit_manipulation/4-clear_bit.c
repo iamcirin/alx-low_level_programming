@@ -4,7 +4,7 @@
  * clear_bit - a function that flips a bit to 0
  * @n: the int to change
  * @index: the position to flip the bit
- * Return; returns 1 or -1
+ * Return: returns 1 or -1
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
